@@ -1,6 +1,6 @@
 FROM node:current-alpine3.22
 WORKDIR /gateway
-COPY .env .env
+# COPY .env .env
 COPY env.d.ts env.d.ts 
 COPY package*.json ./
 COPY tsconfig.json ./
