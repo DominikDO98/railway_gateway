@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec tsx index.ts",
-    "build": "cd modules/gateway && tsc && cd ../reciver && tsc",
-    "start:gateway": "node ./modules/gateway/dist/src/index.js",
-    "start:reciver": "node ./modules/reciver/dist/src/index.js",
-    "start": "concurrently  \"npm run start:gateway\" \"npm run start:reciver\""
+    "build": "tsc",
+    "start": "node ./dist/src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +22,6 @@
   "dependencies": {
     "amqplib": "^0.10.3",
     "chalk": "^5.4.1",
-    "concurrently": "^9.2.0",
     "dotenv": "^17.1.0",
     "express": "^5.1.0",
     "uuid": "^11.1.0",
