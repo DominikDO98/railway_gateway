@@ -63,5 +63,5 @@
     "useUnknownInCatchVariables": true,
     "verbatimModuleSyntax": false
   },
-  "include": ["src/**/*.ts", "lib/**/*.ts", "../../env.d.ts"]
+  "include": ["src/*.ts", "lib/**/*.ts", "env.d.ts"]
 }
